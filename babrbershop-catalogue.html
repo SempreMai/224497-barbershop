@@ -8,7 +8,9 @@
     <header class="catalogue-header">
       <div class="container">
         <div class="catalogue-logo">
-        <img src="image-logo" width="368" height="204" alt="Барбершоп">
+          <a class="main-link" href="#">
+            <img src="image-logo" width="368" height="204" alt="Барбершоп">
+          </a>
         </div>
         <nav class="catalogue-navigation">
           <ul>
@@ -32,19 +34,20 @@
       <div class="user-block">
         <a class="login" href="#">Вход</a>
       </div>
-      </div>
-    </header>
-    <main>
-      <div class="catalogue-title">
-        <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
-        <ul class="bredcrumps">
-          <li class="1_breadcrump"><a href="#" title="main">ГЛАВНАЯ</a></li>
-          <li class="2_breadcrump"><a href="#" title="shop">МАГАЗИН</a></li>
-          <li class="3_breadcrump"><a href="#" title="catalogue">СРЕДСТВА ДЛЯ УХОДА</a></li>
-        </ul>
-      </div>
-      <div class="catalogue-content">
-        <div class="catalogue-selection">
+    </div>
+  </header>
+  <main>
+    <div class="catalogue-title">
+      <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
+      <ul class="bredcrumps">
+        <li class="breadcrump-1"><a href="#" title="main">ГЛАВНАЯ</a></li>
+        <li class="breadcrump-2"><a href="#" title="shop">МАГАЗИН</a></li>
+        <li class="breadcrump-3"><span title="catalogue">СРЕДСТВА ДЛЯ УХОДА</span></li>
+      </ul>
+    </div>
+    <div class="catalogue-content">
+      <div class="catalogue-selection">
+        <div class="selection-manufacturers"
           <h2>ПРОИЗВОДИТЕЛИ:</h2>
             <form action="#">
               <label>
@@ -71,7 +74,9 @@
                 <input type="checkbox" name="american-crew" checked>
                 AMERICAN CREW
               </label>
-            <h2>ГРУППЫ ТОВАРОВ</h2>
+            </div>
+            <div class="selection-categories">
+              <h2>ГРУППЫ ТОВАРОВ</h2>
               <label>
                 <input type="radio" name="merchandise-group" value="shaving-accessories" checked>
                 БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ
@@ -85,102 +90,80 @@
                 АКСЕССУАРЫ
               </label>
               <input type="submit" value="ПОКАЗАТЬ">
-            </form>
-          </div>
-          <div class="catalogue-gallery">
-            <div class="catalogue-item">
-              <figure class="catalogue-item-image">
-                <a href="item-page"><img src="image-1" width="30" height="10"
-                  alt="Набор для путешествий «BAXTER CALIFORNIA»"></a>
-              </figure>
-              <a href="item-page"><h3>Набор для путешествий<br>
-                «BAXTER CALIFORNIA»</h3></a>
-              <div class="item-price-buy">
-                <span class="item-price trip-kit">2900 РУБ.</span>
-                <button class="item-buy" type="button">КУПИТЬ</button>
-              </div>
             </div>
-            <div class="catalogue-item">
-              <figure class="catalogue-item-image">
-                <a href="item-page"><img src="image-2" width="30" height="10"
-                  alt="Увлажняющий кондиционер «BAXTER CALIFORNIA»"></a>
-              </figure>
-              <a href="item-page"><h3>"Увлажняющий кондиционер<br>
-                «BAXTER CALIFORNIA»</h3></a>
-              <div class="item-price-buy">
-                <span class="item-price trip-kit">750 РУБ.</span>
-                <button class="item-buy" type="button">КУПИТЬ</button>
-              </div>
-            </div>
-            <div class="catalogue-item">
-              <figure class="catalogue-item-image">
-                <a href="item-page"><img src="image-3" width="30" height="10"
-                  alt="Гель для волос «SAUVECITO»"></a>
-              </figure>
-              <a href="item-page"><h3>"Гель для волос<br>
-                «SAUVECITO»</h3></a>
-              <div class="item-price-buy">
-                <span class="item-price trip-kit">290 РУБ.</span>
-                <button class="item-buy" type="button">КУПИТЬ</button>
-              </div>
-            </div>
-            <div class="catalogue-item">
-              <figure class="catalogue-item-image">
-                <a href="item-page"><img src="image-4" width="30" height="10"
-                  alt="Глина для укладки волос «AMERICAN CREW»"></a>
-              </figure>
-              <a href="item-page"><h3>Глина для укладки волос<br>
-                «AMERICAN CREW»</h3></a>
-              <div class="item-price-buy">
-                <span class="item-price trip-kit">500 РУБ.</span>
-                <button class="item-buy" type="button">КУПИТЬ</button>
-              </div>
-            </div>
-            <div class="catalogue-item">
-              <figure class="catalogue-item-image">
-                <a href="item-page"><img src="image-5" width="30" height="10"
-                  alt="Гель для волос «AMERICAN CREW»"></a>
-              </figure>
-              <a href="item-page"><h3>Гель для волос<br>
-                «AMERICAN CREW»</h3></a>
-              <div class="item-price-buy">
-                <span class="item-price trip-kit">2900 РУБ.</span>
-                <button class="item-buy" type="button">КУПИТЬ</button>
-              </div>
-            </div>
-            <div class="catalogue-item">
-              <figure class="catalogue-item-image">
-                <a href="item-page"><img src="image-6" width="30" height="10"
-                  alt="Набор для бритья «BAXTER CALIFORNIA»"></a>
-              </figure>
-              <a href="item-page"><h3>Набор для бритья<br>
-                «BAXTER CALIFORNIA»</h3></a>
-              <div class="item-price-buy">
-                <span class="item-price trip-kit">2900 РУБ.</span>
-                <button class="item-buy" type="button">КУПИТЬ</button>
-              </div>
+          </form>
+        </div>
+        <div class="catalogue-gallery">
+          <div class="catalogue-item">
+            <a href="item-page"><img src="image-1" width="30" height="10"
+            alt="Набор для путешествий «BAXTER CALIFORNIA»"></a>
+            <a href="item-page"><h3>Набор для путешествий<br>
+              «BAXTER CALIFORNIA»</h3></a>
+            <div class="item-price-buy">
+              <span class="item-price trip-kit">2900 РУБ.</span>
+              <a class="btn item-buy" href="#">КУПИТЬ</a>
             </div>
           </div>
-          <div class="catalogue-pages">
+          <div class="catalogue-item">
+            <a href="item-page"><img src="image-2" width="30" height="10"
+              alt="Увлажняющий кондиционер «BAXTER CALIFORNIA»"></a>
+            <a href="item-page"><h3>"Увлажняющий кондиционер<br>
+              «BAXTER CALIFORNIA»</h3></a>
+            <div class="item-price-buy">
+              <span class="item-price trip-kit">750 РУБ.</span>
+              <a class="btn item-buy" href="#">КУПИТЬ</a>
+            </div>
+          </div>
+          <div class="catalogue-item">
+            <a href="item-page"><img src="image-3" width="30" height="10"
+              alt="Гель для волос «SAUVECITO»"></a>
+            <a href="item-page"><h3>"Гель для волос<br>
+              «SAUVECITO»</h3></a>
+            <div class="item-price-buy">
+              <span class="item-price trip-kit">290 РУБ.</span>
+              <a class="btn item-buy" href="#">КУПИТЬ</a>
+            </div>
+          </div>
+          <div class="catalogue-item">
+            <a href="item-page"><img src="image-4" width="30" height="10"
+              alt="Глина для укладки волос «AMERICAN CREW»"></a>
+            <a href="item-page"><h3>Глина для укладки волос<br>
+              «AMERICAN CREW»</h3></a>
+            <div class="item-price-buy">
+              <span class="item-price trip-kit">500 РУБ.</span>
+              <a class="btn item-buy" href="#">КУПИТЬ</a>
+            </div>
+          </div>
+          <div class="catalogue-item">
+            <a href="item-page"><img src="image-5" width="30" height="10"
+              alt="Гель для волос «AMERICAN CREW»"></a>
+            <a href="item-page"><h3>Гель для волос<br>
+              «AMERICAN CREW»</h3></a>
+            <div class="item-price-buy">
+              <span class="item-price trip-kit">2900 РУБ.</span>
+              <a class="btn item-buy" href="#">КУПИТЬ</a>
+            </div>
+          </div>
+          <div class="catalogue-item">
+            <a href="item-page"><img src="image-6" width="30" height="10"
+              alt="Набор для бритья «BAXTER CALIFORNIA»"></a>
+            <a href="item-page"><h3>Набор для бритья<br>
+              «BAXTER CALIFORNIA»</h3></a>
+            <div class="item-price-buy">
+              <span class="item-price trip-kit">2900 РУБ.</span>
+              <a class="btn item-buy" href="#">КУПИТЬ</a>
+            </div>
+          </div>
+        </div>
+        <div class="catalogue-pages">
           <ul class="pagination">
             <li><a href="#" title="first">1</a></li>
-            <li><a href="#" title="second">2</a></li>
+            <li><span title="second">2</span></li>
             <li><a href="#" title="third">3</a></li>
             <li><a href="#" title="fourth">4</a></li>
           </ul>
         </div>
       </div>
-      <div class="catalogue-pages">
-      <ul class="pagination">
-        <li><a href="#" title="previous"><</a></li>
-        <li><a href="#" title="first">1</a></li>
-        <li><a href="#" title="second">2</a></li>
-        <li><a href="#" title="third">3</a></li>
-        <li><a href="#" title="fourth">4</a></li>
-        <li><a href="#" title="fifth">5</a></li>
-        <li><a href="#" title="next">></a></li>
-      </ul>
-    </div>
     </main>
     <footer class="catalogue-footer">
       <div class="container">
@@ -192,10 +175,12 @@
         </section>
         <section class="footer-social">
           <p>Давайте дружить!</p>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          <a class="social-btn social-btn-extra" href="#">Экстра</a>
+          <ul>
+            <li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
+            <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
+            <li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
+            <li><a class="social-btn social-btn-extra" href="#">Экстра</a></li>
+          </ul>
         </section>
         <section class="footer-copyright">
           <p>Разработано:</p>
