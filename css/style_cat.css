@@ -11,7 +11,7 @@ body {
   clear: both;
 }
 
-.catalogue-header {
+.inner-header {
   margin-bottom: 55px;
 }
 
@@ -21,12 +21,12 @@ body {
   padding: 0 10px;
 }
 
-.catalogue-logo {
+.inner-logo {
   float: left;
   width: 150px;
 }
 
-.catalogue-navigation {
+.inner-navigation {
   float: left;
   width: 650px;
 }
@@ -40,7 +40,7 @@ body {
   width: 140px;
 }
 
-.catalogue-title {
+.inner-title {
   width: 310px;
   margin-bottom: 70px;
 }

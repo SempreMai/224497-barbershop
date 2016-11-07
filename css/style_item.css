@@ -10,7 +10,7 @@ body {
   clear: both;
 }
 
-.item-header {
+.inner-header {
   margin-bottom: 55px;
 }
 
@@ -20,7 +20,7 @@ body {
   padding: 0 10px;
 }
 
-.item-logo {
+.inner-logo {
   float: left;
   width: 150px;
 }
@@ -39,7 +39,7 @@ body {
   width: 140px;
 }
 
-.item-title {
+.inner-title {
   width: 630px;
   margin-bottom: 60px;
 }

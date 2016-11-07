@@ -8,7 +8,7 @@ body {
 body {
   font-size: 24px;
   line-height: 42px;
-  color: #f7f4f1;
+  color: #000000;
   font-weight: bold;
   font-family: "PTSans", sans-serif;
 }
@@ -28,16 +28,35 @@ body {
 header {
   font-size: 16px;
   line-height: 20px;
+  color: #999999;
 }
 
 .main-header {
   margin-bottom: 60px;
 }
 
+.inner-header {
+  margin-bottom: 55px;
+}
+
 .main-navigation {
   float: left;
   width: 780px;
   min-height: 70px;
+}
+
+.inner-logo {
+  float: left;
+  width: 150px;
+}
+
+.inner-navigation {
+  float: left;
+  width: 650px;
+ }
+
+.navigation-menu li{
+  display: inline-block;
 }
 
 .user-block {
@@ -91,7 +110,7 @@ main {
   min-height: 330px;
 }
 
-.main-footer {
+.footer {
   margin-top: 65px;
   padding-top: 60px;
   padding-bottom: 40px;
@@ -110,8 +129,104 @@ main {
   min-height: 90px;
 }
 
+.social li {
+  display: inline-block;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
 .footer-copyright {
   float: right;
   width: 180px;
   min-height: 90px;
+}
+
+.catalogue-title {
+  /*width: 310px;*/
+  margin-bottom: 70px;
+}
+
+.item-title {
+  margin-bottom: 30px;
+}
+
+.breadcrumps li {
+  display: inline-block;
+}
+
+.catalogue-selection {
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.catalogue-selection li {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalogue-gallery {
+  float: right;
+  width: 700px;
+  margin-bottom: 20px;
+  /*только для разметки сетки*/
+  min-height: 290px;
+}
+
+.catalogue-item {
+  float: left;
+  width: 220px;
+  margin-right: 10px;
+}
+
+.catalogue-item:last-child {
+  margin-right: 0;
+}
+
+.catalogue-pages {
+  display: inline-block;
+  width: 195px;
+  margin-top: 20px;
+}
+
+.pagination li {
+  display: inline-block;
+}
+
+.item-content-left {
+  float: left;
+  width: 460px;
+}
+
+.item-content-right {
+  float: right;
+  width: 390px;
+}
+
+.item-preview-big {
+  width: 460px;
+  min-height: 500px;
+  margin-bottom: 20px;
+}
+
+.item-preview-small {
+  width: 460px;
+}
+
+.item-small {
+  float: left;
+  width: 140px;
+  margin-right: 20px;
+}
+
+.item-small:last-child {
+  margin-right: 0;
 }
