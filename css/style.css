@@ -179,15 +179,22 @@ h2 {
   margin-bottom: 20px;
   /*только для разметки сетки*/
   min-height: 290px;
+  font-size: 0;
 }
 
 .catalogue-item {
   float: left;
   width: 220px;
   margin-right: 10px;
+  margin-bottom: 20px;
+  min-height: 290px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 18px;
 }
 
-.catalogue-item:last-child {
+.catalogue-item:nth-child(3n) {
   margin-right: 0;
 }
 
