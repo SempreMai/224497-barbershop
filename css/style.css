@@ -1,16 +1,15 @@
 html,
 body {
-  min-width: 1122px;
+  min-width: 960px;
   margin: 0;
   padding: 0;
-}
-
-body {
-  font-size: 24px;
-  line-height: 42px;
-  color: #000000;
-  font-weight: bold;
-  font-family: "PTSans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  text-transform: uppercase;
+  background: #000000 url("../img/tint.jpg") no-repeat center top;
 }
 
 .clearfix::after {
@@ -22,7 +21,7 @@ body {
 .container {
   width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 0;
 }
 
 header {
@@ -33,49 +32,154 @@ header {
 
 .main-header {
   margin-bottom: 60px;
-}
-
-.inner-header {
-  margin-bottom: 55px;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 .main-navigation {
   float: left;
   width: 780px;
-  min-height: 70px;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.main-navigation li {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+}
+
+.main-navigation a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 25px 20px;
+}
+
+.main-navigation a:hover {
+  background: #242424;
+}
+
+/*стили хедера внутренних страниц*/
+.inner-header {
+  margin-bottom: 55px;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 .inner-logo {
   float: left;
   width: 150px;
+  margin: 0 auto;
+  margin-top: 23px;
+}
+
+.inner-logo img {
+  width: 111px;
+  height: 24px;
 }
 
 .inner-navigation {
   float: left;
-  width: 650px;
+  width: 560px;
  }
 
-.navigation-menu li{
+ .inner-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+ }
+
+ .inner-navigation li{
   display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
 }
+
+.inner-navigation a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 23px 20px;
+}
+
+.inner-navigation a:hover {
+  background: #242424;
+}
+
+/*.inner-navigation a:active {
+    border-bottom: 4px solid #ffffff;
+}*/
 
 .user-block {
   float: right;
-  width: 140px;
-  min-height: 70px;
+  max-width: 140px;
 }
 
-main {
-  font-size: 14px;
-  line-height: 24px;
+/*общие*/
+
+.login {
+  position: relative;
+  display: inline-block;
+  padding: 25px 20px;
+  padding-left: 50px;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
 }
+
+.login:hover {
+  background-color: #242424;
+}
+
+.login::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  width: 18px;
+  height: 16px;
+  background-position: -10px -208px; /*не встает на место иконка*/
+  background: #ff0000 url("../img/sprite.png") no-repeat;
+  opacity: 0.3;
+}
+
+.login:hover::before {
+  opacity: 1;
+}
+
+/*.sprite {
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon-login {
+    width: 18px;
+    height: 16px;
+    background-position: -10px -208px;
+}*/
 
 .index-logo {
   width: 368px;
-  min-height: 204px;
-  margin-right: auto;
-  margin-left: auto;
+  height: 204px;
+  margin: 0 auto;
   margin-bottom: 25px;
+}
+
+.index-logo img {
+   width: 368px;
+  height: 204px;
 }
 
 .features {
@@ -85,17 +189,47 @@ main {
 .features-item {
   float: left;
   width: 300px;
-  min-height: 175px;
   margin-right: 20px;
+  text-align: center;
+}
+
+.features-item p {
+  margin: 10px;
+  margin-bottom: 0;
 }
 
 .features-item:last-child {
   margin-right: 0;
 }
 
+.features-name {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  padding-bottom: 35px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.features-name::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+}
+
 .index-content {
   margin-bottom: 35px;
   padding: 50px 80px;
+  color: #000000;
+  background: url("../img/Content_divider.png") no-repeat center,
+  #f8f5f2 url("../img/features_pattern.jpg");
 }
 
 .index-content-left {
@@ -110,10 +244,121 @@ main {
   min-height: 330px;
 }
 
+.index-content-title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.index-content p {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.news-preview {
+  margin: 0;
+  padding: 0;
+  padding-right: 35px;
+  list-style: none;
+}
+
+.news-preview li {
+  margin-bottom: 25px;
+}
+
+.news-preview p {
+  margin-bottom: 0;
+}
+
+.news-preview time {
+  text-transform: none;
+}
+
+.btn {
+  margin-right: 16px;
+  display: inline-block;
+  padding: 10px 33px;
+  font: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  vertical-align: top;
+  text-align: center;
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #663d15;
+}
+
+.gallery {
+  position: relative;
+  height: 260px;
+}
+
+.gallery-content {
+  height: 164px;
+  margin: 0;
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
+}
+
+.gallery-content img {
+  width: 286px;
+  height: 164px;
+}
+
+.gallery .btn {
+  position: absolute;
+  bottom: 0;
+  width: 140px;
+  margin: 0;
+}
+
+.gallery-prev {
+  right: 0;
+}
+
+.gallery-next {
+  left: 0;
+}
+
+.appointment-form input {
+  float: left;
+  width: 106px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 7px 15px;
+  font: inherit;
+  color: #000000; /*не меняется цвет*/
+  text-transform: uppercase;
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+}
+
+.appointment-form input:focus {
+  border: 2px solid #663d15;
+}
+
+.appointment-form input:nth-child(2n) {
+  margin-right: 0;
+}
+
+.appointment-form .btn {
+  clear: both;
+  width: 100%;
+}
+
 .footer {
   margin-top: 65px;
   padding-top: 60px;
   padding-bottom: 40px;
+  color: #ffffff;
+  background: #252525 url("../img/footer_pattern.jpg")
 }
 
 .footer-contacts {
@@ -123,19 +368,111 @@ main {
   min-height: 90px;
 }
 
+.footer-contacts a {
+  color: #ffffff;
+}
+
+.footer-contacts a:hover {
+  text-decoration: none;
+}
+
 .footer-social {
   float: left;
   width: 180px;
   min-height: 90px;
+  text-align: center;
 }
 
-.social li {
+.footer-social p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.social {
+  list-style: none;
+}
+
+.social-btn {
   display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin: 0 2px;
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+  background: #000000 url("..img/sprite.png") no-repeat center;
 }
 
-.footer p {
-  font-size: 14px;
-  line-height: 24px;
+/*.sprite-Inst-icon {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -10px;
+}
+
+.sprite-Inst-icon-bk {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -51px;
+}
+
+.sprite-cross-checkbox {
+    width: 12px;
+    height: 12px;
+    background-position: -10px -92px;
+}
+
+.sprite-fb-icon {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -124px;
+}
+
+.sprite-fb-icon-bk {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -166px;
+}
+
+.sprite-vk-icon {
+    width: 25px;
+    height: 16px;
+    background-position: -10px -244px;
+}
+
+.sprite-vk-icon-bk {
+    width: 25px;
+    height: 16px;
+    background-position: -10px -280px;
+}*/
+
+.social-btn-inst {  /*не встает на место иконка*/
+    /*width: 21px;
+    height: 21px;*/
+    background-position: -10px -10px;
+}
+
+.social-btn-fb {  /*не встает на место иконка*/
+    /*width: 12px;
+    height: 22px;*/
+    background-position: -10px -124px;
+}
+
+.social-btn-vk {  /*не встает на место иконка*/
+    /*width: 25px;
+    height: 16px;*/
+    background-position: -10px -244px;
+}
+
+.social-btn-inst:hover {
+  background-position: -10px -51px;
+}
+
+.social-btn-fb:hover {
+  background-position: -10px -166px;
+}
+
+.social-btn-vk:hover {
+  background-position: -10px -280px;
 }
 
 .footer-copyright {
@@ -144,33 +481,205 @@ main {
   min-height: 90px;
 }
 
-.catalogue-title {
-  /*width: 310px;*/
-  margin-bottom: 70px;
+.footer-copyright p {
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.footer-copyright .btn {
+  margin-right: 0;
+}
+
+/*стили внутренних страниц*/
+
+.inner {
+  background: #f6f3f0 url("../img/Inner-background.jpg") no-repeat center top;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 42px;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.breadcrumps {  /*почему-то уехали вправо*/
+  margin-bottom: 55px;
+  list-style: none;
+  color: #000000;
+  text-align: left;
+}
+
+.breadcrumps li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+
+}
+
+.breadcrumps a {
+  position: relative;
+  display: block;
+  margin-right: 15px;
+  padding-right: 25px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.breadcrumps a::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.breadcrumps span {
+  color: #aba9a7;
 }
 
 .item-title {
   margin-bottom: 30px;
 }
 
-.breadcrumps li {
-  display: inline-block;
-}
-
 .catalogue-selection {
   float: left;
   width: 220px;
   margin-right: 20px;
+  color: #000000;
+}
+
+.selection-section {
+  margin-bottom: 50px;
+}
+
+.selection-section:last-child {
+  margin-bottom: 0;
 }
 
 h2 {
   font-size: 24px;
   line-height: 30px;
+  margin-bottom: 30px;
 }
 
-.catalogue-selection li {
-  font-size: 14px;
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  display: block;
   line-height: 18px;
+  margin: 15px 0;
+  padding-left: 45px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000000;
+  background-color: #f6f3f0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+input[type="checkbox"]:checked + label::after {  /*Не видно крестика*/
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #f6f3f0 url("..img/sprite.png") no-repeat center;
+  background-position: -10px -92px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+
+input[type="checkbox"] + label:hover/*::before*/ {
+  color: #663d15;
+}
+
+input[type="checkbox"]:checked + label:hover/*::after*/ {
+  color: #663d15;
+}
+
+input[type="checkbox"] + label.disabled,
+input[type="checkbox"] + label:disabled/*::before*/ {
+  color: #d1cecc;
+}
+
+input[type="checkbox"]:checked + label.disabled,
+input[type="checkbox"]:checked + label:disabled/*::after*/ {
+  color: #d1cecc;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  display: block;
+  line-height: 18px;
+  margin: 15px 0;
+  padding-left: 45px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  background-color: #f6f3f0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+input[type="radio"]:checked + label::after {  /*Не видно крестика*/
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  border-radius: 6px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+
+input[type="radio"] + label:hover {
+  color: #663d15;
+}
+
+input[type="radio"]:checked + label:hover {
+  color: #663d15;
+}
+
+input[type="radio"] + label.disabled,
+input[type="radio"] + label:disabled/*::before*/ {
+  color: #d1cecc;
+}
+
+input[type="radio"]:checked + label.disabled,
+input[type="radio"]:checked + label:disabled/*::after*/ {
+  color: #d1cecc;
+}
+
+.selection-section .btn {
+  margin-top: 50px;
 }
 
 .catalogue-gallery {
@@ -190,32 +699,83 @@ h2 {
   min-height: 290px;
   display: inline-block;
   vertical-align: top;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 0;
+  background-color: #ffffff;
 }
 
 .catalogue-item:nth-child(3n) {
   margin-right: 0;
 }
 
-.catalogue-pages {
-  display: inline-block;
-  width: 195px;
-  margin-top: 20px;
+.item-name {
+  display: block;
+  margin: 15px; /*почему-то большой верхний отступ*/
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-decoration: none;
 }
 
-.pagination li {
+.item-price-buy {
+  color: #000000;
+  margin: 15px;
+  margin-top: 0;
+}
+
+.item-price-buy span {
   display: inline-block;
+  min-width: 110px;
+  min-height: 40px;
+  /*padding: 10px 30px;*/
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+  background-color: #e5e5e5;
+  border: none;
+}
+
+.item-price-buy .btn {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  margin: 0;
+  padding: 11px 18px;
+}
+
+.catalogue-pages {
+  margin-top: 20px;
+  margin-left: 240px;
+}
+
+.catalogue-pages a,
+.catalogue-pages span {
+  display: inline-block;
+  min-width: 43px;
+  min-height: 43px;
+  margin-right: 7px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 43px;
+}
+
+.catalogue-pages span {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.catalogue-pages a:hover {
+  background-color: #663d15;
 }
 
 .item-content-left {
   float: left;
   width: 460px;
-}
-
-.item-content-right {
-  float: right;
-  width: 390px;
 }
 
 .item-preview-big {
@@ -236,4 +796,59 @@ h2 {
 
 .item-small:last-child {
   margin-right: 0;
+}
+
+.item-content-right {
+  float: right;
+  width: 390px;
+}
+
+.item-content-right b {
+  display: inline-block;
+  padding-top: 25px;
+  color: #000000;
+}
+
+.item-content-right b:nth-child(2) {
+  margin-left: 175px;
+  color: #e5e5e5;
+}
+
+.item-content-right p {
+  color: #000000;
+  padding-right: 17.5px;
+  margin-bottom: 40px;
+}
+
+.item-content-right .item-price-buy {
+  margin-left: 0;
+  margin-bottom: 65px;
+}
+
+.item-content-right h2 {
+  color: #000000;
+}
+
+.item-consists ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item-consists li {
+  position: relative;
+  color: #000000;
+  padding-left: 20px;
+}
+
+.item-consists li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 30%;
+  display: block;
+  background-color: #000000;
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
 }
