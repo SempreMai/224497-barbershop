@@ -776,6 +776,7 @@ input[type="radio"]:checked + label:disabled/*::after*/ {
 .item-content-left {
   float: left;
   width: 460px;
+  margin-bottom: 50px;
 }
 
 .item-preview-big {
